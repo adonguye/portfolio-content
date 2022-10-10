@@ -1,41 +1,46 @@
+
 /*Add padding and margin to space out the page.
 Make the font larger too.*/
+
 body{
-	margin:1%;
-	padding:1%;
-	font-size:150%;
+	font-family: Verdana, Arial;
+	padding-top: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
 /*Make the h1 heading bigger with a bold font*/
 h1{
-	font-size: 2em; 
-	font-weight: bold;
-}
-
-.active{
-	background: white;
-    text-transform: uppercase;
+	font-family: Verdana, Arial;
 	text-align: center;
-}
-
-.active a{
-	text-decoration: none;;
+	/* font-weight: bold; */
+	font-size: 48px;
+	padding: 20px;
+	color: #4169e1 solid;
 }
 
 /*Style the images*/
 img{
     height: 175px;
-	width:auto;
+	width: auto;
     border: 3px solid blue;
     padding: 25px;
     border-radius: 20px;
     margin: 10px;
+
 }
+
+img:hover {
+	background-color: gold;
+  }
+
+
 
 /*Make the h2 heading match h1*/
 h2{
-	font-size: 2em; 
-	font-weight: bold;
+	text-align: center;
+	/* font-weight: bold; */
+	font-size: 32px;
 }
 
 /*Improve the spacing for paragraphs AND headings*/
@@ -51,7 +56,23 @@ header, nav, main, footer{
 }
 
 
-/*Change the styling for all of the list 
+.grid-container {
+	border: 2px #4169e1 solid;
+	display: grid;
+	grid-template-columns: 25% 25%;
+	grid-template-rows: 200px 200px;
+	gap: 50px 100px;
+
+  }
+
+.gallery {
+	font-family: Verdana, Arial;
+	padding-top: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+/*Change the styling for all of the list
 items in the nav section*/
 nav li{
 	background-color: #ECFF4D;
@@ -65,3 +86,7 @@ nav li{
 /*Added this so the links stay the same color*/
 a:visited{color:#0000FF}
 
+footer{
+	font-family: Verdana, Arial;
+	background:linear-gradient(90deg, #e0a4bd 0%, #0000ff 25%, #0066ff 70%, #000000 100%);
+}
